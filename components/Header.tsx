@@ -57,9 +57,9 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
-              <Link href="/features" className="text-gray-600 text-left" onClick={() => setIsMenuOpen(false)}>Features</Link>
-              <Link href="/pricing" className="text-gray-600 text-left" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
-              <Link href="/reviews" className="text-gray-600 text-left" onClick={() => setIsMenuOpen(false)}>Reviews</Link>
+              <Link href="/features" className="text-gray-600 text-left">Features</Link>
+              <Link href="/pricing" className="text-gray-600 text-left">Pricing</Link>
+              <Link href="/reviews" className="text-gray-600 text-left">Reviews</Link>
               <button onClick={() => {document.getElementById('faq')?.scrollIntoView({behavior: 'smooth'}); setIsMenuOpen(false);}} className="text-gray-600 text-left">FAQ</button>
               <button onClick={handleSignIn} className="text-gray-600 mb-2">Sign In</button>
               <button onClick={handleCTAClick} className="btn-primary text-center">

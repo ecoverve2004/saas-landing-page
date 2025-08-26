@@ -8,12 +8,13 @@ export default function PopupModal() {
   const [email, setEmail] = useState('');
 
   useEffect(() => {
-    // Show popup after 30 seconds
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 30000);
-
-    return () => clearTimeout(timer);
+    // Show popup after 30 seconds (only in browser)
+    if (typeof window !== 'undefined') {
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 30000);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {

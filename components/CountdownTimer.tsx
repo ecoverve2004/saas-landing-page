@@ -11,11 +11,13 @@ export default function CountdownTimer() {
   });
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     // Set countdown to 7 days from now
     const targetDate = new Date();
     targetDate.setDate(targetDate.getDate() + 7);
 
-    const timer = setInterval(() => {
+    const updateTimer = () => {
       const now = new Date().getTime();
       const distance = targetDate.getTime() - now;
 
@@ -27,8 +29,10 @@ export default function CountdownTimer() {
           seconds: Math.floor((distance % (1000 * 60)) / 1000)
         });
       }
-    }, 1000);
+    };
 
+    updateTimer();
+    const timer = setInterval(updateTimer, 1000);
     return () => clearInterval(timer);
   }, []);
 
