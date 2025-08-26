@@ -6,12 +6,13 @@ import Analytics from '@/components/Analytics';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'SaaS Platform - Boost Your Business Growth by 300%',
-  description: 'Transform your business with our powerful SaaS platform. Join 10,000+ businesses using advanced analytics, automation, and enterprise security.',
+  metadataBase: new URL('https://saas-landing-page-five-gamma.vercel.app'),
+  title: 'Ecoverve - High-Converting SaaS Landing Page',
+  description: 'Transform your business with Ecoverve TechSolution. Join 10,000+ businesses using advanced analytics, automation, and enterprise security.',
   keywords: 'SaaS, business growth, analytics, automation, productivity',
   openGraph: {
-    title: 'SaaS Platform - Boost Your Business Growth by 300%',
-    description: 'Transform your business with our powerful SaaS platform.',
+    title: 'Ecoverve - High-Converting SaaS Landing Page',
+    description: 'Transform your business with Ecoverve TechSolution.',
     type: 'website',
   },
 };
