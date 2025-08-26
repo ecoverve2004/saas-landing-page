@@ -28,6 +28,7 @@ export default function Header() {
             <a href="#features" className="text-gray-600 hover:text-gray-900">Features</a>
             <a href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
             <a href="#testimonials" className="text-gray-600 hover:text-gray-900">Reviews</a>
+            <a href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</a>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -58,6 +59,7 @@ export default function Header() {
               <a href="#features" className="text-gray-600">Features</a>
               <a href="#pricing" className="text-gray-600">Pricing</a>
               <a href="#testimonials" className="text-gray-600">Reviews</a>
+              <a href="#faq" className="text-gray-600">FAQ</a>
               <button onClick={handleSignIn} className="text-gray-600 mb-2">Sign In</button>
               <button onClick={handleCTAClick} className="btn-primary text-center">
                 Start Free Trial

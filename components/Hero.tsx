@@ -27,7 +27,7 @@ export default function Hero() {
     : 'Transform Your Business in 30 Days';
 
   return (
-    <section className="bg-gradient-to-br from-primary-50 to-white py-20">
+    <section id="hero" className="bg-gradient-to-br from-primary-50 to-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
