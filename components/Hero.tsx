@@ -1,21 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { getVariant, trackConversion } from '@/lib/analytics';
+import { useState } from 'react';
 
 export default function Hero() {
-  const [variant, setVariant] = useState<'A' | 'B'>('A');
   const [email, setEmail] = useState('');
-
-  useEffect(() => {
-    setVariant(getVariant('hero_cta'));
-  }, []);
+  const variant = 'A'; // Simplified
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      trackConversion('email_signup');
-      // Handle email submission
       alert('Thank you for signing up!');
       setEmail('');
     }
