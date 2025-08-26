@@ -25,9 +25,9 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-gray-900" onClick={(e) => {e.preventDefault(); document.getElementById('features')?.scrollIntoView({behavior: 'smooth'});}}>Features</a>
-            <a href="#pricing" className="text-gray-600 hover:text-gray-900" onClick={(e) => {e.preventDefault(); document.getElementById('pricing')?.scrollIntoView({behavior: 'smooth'});}}>Pricing</a>
-            <a href="#testimonials" className="text-gray-600 hover:text-gray-900" onClick={(e) => {e.preventDefault(); document.getElementById('testimonials')?.scrollIntoView({behavior: 'smooth'});}}>Reviews</a>
+            <a href="/features" className="text-gray-600 hover:text-gray-900">Features</a>
+            <a href="/pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
+            <a href="/reviews" className="text-gray-600 hover:text-gray-900">Reviews</a>
             <a href="#faq" className="text-gray-600 hover:text-gray-900" onClick={(e) => {e.preventDefault(); document.getElementById('faq')?.scrollIntoView({behavior: 'smooth'});}}>FAQ</a>
           </nav>
 
@@ -56,9 +56,9 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
-              <button onClick={() => {document.getElementById('features')?.scrollIntoView({behavior: 'smooth'}); setIsMenuOpen(false);}} className="text-gray-600 text-left">Features</button>
-              <button onClick={() => {document.getElementById('pricing')?.scrollIntoView({behavior: 'smooth'}); setIsMenuOpen(false);}} className="text-gray-600 text-left">Pricing</button>
-              <button onClick={() => {document.getElementById('testimonials')?.scrollIntoView({behavior: 'smooth'}); setIsMenuOpen(false);}} className="text-gray-600 text-left">Reviews</button>
+              <a href="/features" className="text-gray-600 text-left" onClick={() => setIsMenuOpen(false)}>Features</a>
+              <a href="/pricing" className="text-gray-600 text-left" onClick={() => setIsMenuOpen(false)}>Pricing</a>
+              <a href="/reviews" className="text-gray-600 text-left" onClick={() => setIsMenuOpen(false)}>Reviews</a>
               <button onClick={() => {document.getElementById('faq')?.scrollIntoView({behavior: 'smooth'}); setIsMenuOpen(false);}} className="text-gray-600 text-left">FAQ</button>
               <button onClick={handleSignIn} className="text-gray-600 mb-2">Sign In</button>
               <button onClick={handleCTAClick} className="btn-primary text-center">
