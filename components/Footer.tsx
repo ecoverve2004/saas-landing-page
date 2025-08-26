@@ -1,3 +1,5 @@
+'use client';
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -13,30 +15,30 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#features" className="hover:text-white">Features</a></li>
-              <li><a href="#pricing" className="hover:text-white">Pricing</a></li>
-              <li><button onClick={() => alert('API Documentation - Coming Soon!')} className="hover:text-white text-left">API</button></li>
-              <li><button onClick={() => alert('Integrations Page - Coming Soon!')} className="hover:text-white text-left">Integrations</button></li>
+              <li><a href="/features" className="hover:text-white">Features</a></li>
+              <li><a href="/pricing" className="hover:text-white">Pricing</a></li>
+              <li><span className="hover:text-white cursor-pointer">API</span></li>
+              <li><span className="hover:text-white cursor-pointer">Integrations</span></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><button onClick={() => alert('About Us - Ecoverve TechSolution: Empowering businesses since 2024')} className="hover:text-white text-left">About</button></li>
-              <li><button onClick={() => alert('Blog - Coming Soon! Stay tuned for growth tips')} className="hover:text-white text-left">Blog</button></li>
-              <li><button onClick={() => alert('Careers - Join our team! Email: careers@ecoverve.com')} className="hover:text-white text-left">Careers</button></li>
-              <li><button onClick={() => alert('Contact Us - Email: support@ecoverve.com | Phone: +1-800-ECOVERVE')} className="hover:text-white text-left">Contact</button></li>
+              <li><span className="hover:text-white cursor-pointer">About</span></li>
+              <li><span className="hover:text-white cursor-pointer">Blog</span></li>
+              <li><span className="hover:text-white cursor-pointer">Careers</span></li>
+              <li><span className="hover:text-white cursor-pointer">Contact</span></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Support</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><button onClick={() => alert('Help Center - 24/7 Support Available! Visit: help.ecoverve.com')} className="hover:text-white text-left">Help Center</button></li>
-              <li><button onClick={() => alert('Privacy Policy - We protect your data with enterprise-grade security')} className="hover:text-white text-left">Privacy Policy</button></li>
-              <li><button onClick={() => alert('Terms of Service - Fair and transparent terms for all users')} className="hover:text-white text-left">Terms of Service</button></li>
-              <li><button onClick={() => alert('System Status - All systems operational ✅')} className="hover:text-white text-left">Status</button></li>
+              <li><span className="hover:text-white cursor-pointer">Help Center</span></li>
+              <li><span className="hover:text-white cursor-pointer">Privacy Policy</span></li>
+              <li><span className="hover:text-white cursor-pointer">Terms of Service</span></li>
+              <li><span className="hover:text-white cursor-pointer">Status</span></li>
             </ul>
           </div>
         </div>
